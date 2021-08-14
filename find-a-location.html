@@ -30,11 +30,55 @@
                 text = "Okay, Let's take a flight somewhere.";
                 break;
             case "$$$":
-                text = "Okay, We're working with a lot. How about tropical?"
+                text = "Okay, We're working with a lot."
         }
         document.getElementById("demo").innerHTML = text;
 }
     </script>
+    <button onclick="seasonFunction()">What kind of weather do you like?</button>
+
+    <p id="demo2"></p>
+
+    <script>
+    function seasonFunction() {
+        var text;
+        var season = prompt("Type in a weather keyword.", "");
+        switch(season) {
+            case "hot":
+                text = "Okay, How does Marrakesh sound.";
+                break;
+            case "cold":
+                text = "Okay, Let's take a flight to Turkey.";
+                break;
+            case "tropical":
+                text = "Okay, there's a couple places. Cancun, Mexico or Maui, Hawaii?"
+        }
+        document.getElementById("demo2").innerHTML = text;
+}
+</script>
+
+</script>
+<button onclick="lengthFunction()">How long do you want to stay?</button>
+
+<p id="demo3"></p>
+
+<script>
+    function lengthFunction() {
+        var text;
+        var length = prompt("(Number of weeks)", "");
+        switch(length) {
+            case "1":
+                text = "Yellowstone National Park.";
+                break;
+            case "2":
+                text = "Okay, a tropical escape to Maui would be perfect.";
+                break;
+            case "3":
+                text = "Okay, there's a couple places. Bali, Indonesia or Mykonos, Greece?"
+        }
+        document.getElementById("demo3").innerHTML = text;
+}
+</script>
 
 
 
